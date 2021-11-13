@@ -1,0 +1,1636 @@
+<!--見辛い-->
+<!--作成者AK-->
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head> 
+<meta name="msapplication-square70x70logo" content="/site-tile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/site-tile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/site-tile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
+<meta name="msapplication-TileColor" content="#0078d7">
+<link rel="icon" type="image/png" sizes="128x128" href="/android-chrome-128x128.png">
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8"> 
+<!--<meta name="viewport" content="user-scalable=no">-->
+<title>
+AK-script_maker
+</title>
+<noscript>ご利用のブラウザはjavascriptが有効になっていない為、<br>スクリプトメーカーを利用出来ません。</noscript>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js">
+</script>
+<script type="text/javascript" src="Main.js">
+</script>
+<script type="text/javascript" src="add.js">
+</script>     				
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>  
+<body>       
+<div id ="close1">
+<div id="G">
+<div id="over">
+<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ
+<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ
+</div>
+<nav>
+<ul>
+<li><a href="https://youtube.com/channel/UCsU9_MgjoafBuTe_U7XajIA">チャンネル</a></li>
+<li><a href="https://osarunojoji.github.io/script_maker">前のバージョン</a></li>
+<li><a href="https://osarunojoji.github.io/help">Help</a></li>
+<li><a href="https://osarunojoji.github.io/caution">説明？</a></li>
+</ul>
+</nav>
+<h1 id="PA1" class="parent">
+制作者AK最新版スクリプトメーカー
+</h1>    
+
+<div class="ss">
+<button id="End" type="button" onclick="buttonEnd()"> 
+完成保存
+</button>
+</div>
+  <p id="AA1">
+	メインメニュー【1】を作成中
+  </p>
+  <p id="AA2">
+	メニュー【1】を作成中
+  </p>	
+  <div class="ss">
+  <button id="BU1" type="button";
+  onclick="button1()"> 
+  次のメインメニューを作成
+  </div>
+  </button>
+  <div class="ss">
+  <p>
+  <button id="BU2" type="button" onclick="button2()"> 
+  次のメニューを作成
+  </button>
+  </p>
+  </div>
+  <div id="dataA">
+  <input type="checkbox" name="datachecked" id="datachecked">  
+<label for="datachecked" class="checkbox03">
+<div id="dataC">
+データー型を選択
+</div>
+</label>
+</div>
+<p></p>
+<div id="databutton">
+<input type="radio" id="DWORDr" onclick="DWORDr()" name="radio02">
+<label name="ew" id="ra" for="DWORDr" class="radio02">
+<div id="DWORDcl">
+DWORD
+</div>
+</label>
+<p></p>
+<input type="radio" id="FLOATr" onclick="FLOATr()" name="radio02">
+<label id="ra" for="FLOATr" class="radio02">
+<div id="FLOATcl">
+FLOAT
+</div>
+</label>
+<p></p>
+<input type="radio" id="DOUBLEr" onclick="DOUBLEr()" name="radio02">
+<label id="ra" for="DOUBLEr" class="radio02">
+<div id="DOUBLEcl">
+DOUBLE
+</div>
+</label>
+<p></p>
+<input type="radio" id="HEXr" onclick="HEXr()" name="radio02">
+<label id="ra" for="HEXr" class="radio02">
+<div id="HEXcl">
+HEX
+</div>
+</label>
+<p></p>
+<input type="radio" id="AUTOr" onclick="AUTOr()" name="radio02">
+<label id="ra" for="AUTOr" class="radio02">
+<div id="AUTOcl">
+AUTO
+</div>
+</label>
+<p></p>
+<script type="text/javascript">
+var DWORDa = document.getElementById("DWORDr"); 
+var FLOATa = document.getElementById("FLOATr"); 
+var DOUBLEa = document.getElementById("DOUBLEr"); 
+var HEXa = document.getElementById("HEXr"); 
+var AUTOa = document.getElementById("AUTOr"); 
+</script>
+</div>
+<div id="dataA">
+<input type="checkbox" id="memorychecked" name="checkbox03">
+<label for="memorychecked" class="checkbox03">
+<div id="memoryC">
+メモリ範囲を選択
+</div>
+</label>
+</div>
+<div id="memorycheckbox">
+<form name="memoryFORM">
+<input type="checkbox" name="JH" id="JH"> 
+<label for="JH" class="checkboxJ">
+<div id="JHC">
+Jh: Java heap
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="CH" id="CH">
+<label for="CH" class="checkboxJ">
+<div id="CHC">
+Ch: C++ heap
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="CA" id="CA">
+<label for="CA" class="checkboxJ">
+<div id="CAC">
+Ca: C++ alloc  
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="CD" id="CD">
+<label for="CD" class="checkboxJ">
+<div id="CDC">
+Cd: C++ .data
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="CB" id="CB"> 
+<label for="CB" class="checkboxJ">
+<div id="CBC">
+Cb: C++ .bss
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="PS" id="PS"> 
+<label for="PS" class="checkboxJ">
+<div id="PSC">
+PS: PPSSPP
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="A" id="A"> 
+<label for="A" class="checkboxJ">
+<div id="AC">
+A: Anonymous
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="J" id="J">
+<label for="J" class="checkboxJ">
+<div id="JC">
+J: Java 
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="S" id="S">
+<label for="S" class="checkboxJ">
+<div id="SC">
+S: Stack
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="As" id="As">
+<label for="As" class="checkboxJ">
+<div id="ASC">
+As: Ashmem
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="V" id="V">
+<label for="V" class="checkboxJ">
+<div id="VC">
+V: Video
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="O" id="O">
+<label for="O" class="checkboxJ">
+<div id="OC">
+O: Other
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="B" id="B">
+<label for="B" class="checkboxJ">
+<div id="BC">
+B: Bad
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="Xa" id="Xa">
+<label for="Xa" class="checkboxJ">
+<div id="XAC">
+Xa: Code app
+</div>
+</label>
+<p></p>
+<input type="checkbox" name="Xs" id="Xs">
+<label for="Xs" class="checkboxJ">
+<div id="XSC">
+Xs: Code system
+</div>
+</label>
+</form>
+</div>
+<p></p>
+<label>
+<div id="searchC">
+検索値
+</div>
+</label>
+<input class="eform" type="text" id="searchvalue" value=""> 
+<p>
+</p>
+<label>
+<div id="searchC">
+リファイン値
+</div>
+<input class="eform" type="text" id="refinevalue" value=""> 
+</label>
+<p>
+</p>
+<div id="mmm">
+<label>
+<div id="searchC">
+getResult値
+</div>
+</label> 
+<input class="eform" type="number" id="getresultvalue"> 
+</div>
+<p>
+</p>
+<div id="editsValue">
+<label>
+<div id="searchC">
+変更値
+</div>
+</label>
+<input class="eform" type="text" id="editvalue"> 
+<p>
+</p>
+</div>
+<label id="seekBarShow">
+<div id="searchC">
+変更値:seekBar
+</div>
+</label>
+<p></p>
+
+<div id="editsValue_offset">
+<label>
+<div id="searchC_offset">
+後藤した値の変更値
+</div>
+</label>
+<input class="eform" type="text" id="editvalue_offset"> 
+<p>
+</p>
+</div>
+<p></p>
+<label>
+<div id="searchC">
+メニュー名
+</div>
+</label> 
+<input class="eform" type="text" id="menuvalue"> 
+<p></p>
+<div id="dataA">
+<input type="checkbox" id="seekBar" onClick = hides(); name="checkbox03"> 
+<label for="seekBar" class="checkbox03">
+<div id="seekBarC">
+seekBarを付けますか？
+</div>
+</label>
+</div>
+<div id="SeekSetting">
+<p></p>
+<label>
+<div id="searchC">
+初期値
+</div>
+</label> 
+<input class="eform" type="number" id="firstValue"> 
+<p></p>
+<label>
+<div id="searchC">
+最大値
+</div>
+</label> 
+<input class="eform" type="number" id="maxSeekValue"> 
+<p></p>
+<label>
+<div id="searchC">
+最小値
+</div>
+</label> 
+<input class="eform" type="number" id="minSeekValue">
+<p></p>
+<label>
+<div id="searchC">
+表示する文字
+</div>
+</label> 
+<input class="eform" type="text" id="showSeekValue">
+</div>
+</div>
+<p></p>
+<div id="clskk">
+<div id="dataA">
+<input type="checkbox" id="offset_c" onClick = hides2(); name="checkbox03"> 
+<label for="offset_c" class="checkbox03">
+<div id="offsetC">
+後藤を付けますか？
+</div>
+</label>
+<p></p>
+</div>
+<label>
+<div id="offset">
+検索結果と変更したいアドレスとの距離
+</label> 
+<input class="eform" type="number" id="offset_value">
+</div>
+<p></p>
+<label>
+<div id="offset_type">
+後藤した値を変更するデーター型
+</label> 
+<p></p>
+<select id="offset_type_opt"> 
+<option value="gg.TYPE_DWORD">DWORD</option> 
+<option value="gg.TYPE_FLOAT">FLOAT</option> <option value="gg.TYPE_DOUBLE">DOUBLE</option>
+</select>
+<p></p>
+<div id="offsetFreeze">
+<input type="checkbox" id="freeze_c" name="checkbox03" onclick="freezeF()">
+<label for="freeze_c" class="checkbox03">
+<div id="freezeC">
+後藤した値をフリーズしますか？
+</div>
+</label>
+</div>
+</div>
+</div>
+<div id="MAINf">
+<h2 id="ok">
+作成完了
+</h2>
+<div id="MAINg">
+<button id="end1" type="button"> 
+作成したものを保存
+</button>
+</div>
+<p></p>
+<div id="crO">
+<a href="https://youtube.com/channel/UCsU9_MgjoafBuTe_U7XajIA">良かったらチャンネル登録おねがいします。
+</a></div><p></p><p></p><p></p><div id="please"><a>
+バグ、不具合、追加してほしい機能等あったらyoutubeのコメント欄でお願いします。
+</a>
+</div>
+</div>
+<script type="text/javascript">
+var btn22 = document.getElementById('end1'); btn22.addEventListener('click', function() { 
+let contentL = document.getElementById(u).textContent;
+let blob = new Blob([contentL]);
+let blobURL = window.URL.createObjectURL(blob);
+let a = document.createElement('a');
+a.href = blobURL;
+a.download = fileNameWrite;
+document.body.appendChild(a);
+a.click();
+a.parentNode.removeChild(a);
+});
+</script>
+<div id="LUAend">
+<a id="lua">
+gg.toast("起動")br999
+gg.sleep(350)br999
+offsetbr999
+function Main()br999
+AK=gg.choice({"MM1","MM2","MM3","MM4","MM5","MM6","MM7", "MM8","MM9","MM0",'終了'},nil,'制作者')br999
+if AK == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZG1br999
+QAZG2br999
+QAZG3br999
+QAZG4br999
+QAZG5br999
+QAZG6br999
+QAZG7br999
+QAZG8br999
+QAZG9br999
+QAZG10br999
+QAZG11br999
+valu=-1br999
+endbr999
+endbr999
+function A1()br999
+SK=gg.multiChoice({"め1","め2","め3","め4","め5","め6","め7","め8","め9","め0","戻る"},nil,'')br999
+if SK == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ2G1br999
+QAZ2G2br999
+QAZ2G3br999
+QAZ2G4br999
+QAZ2G5br999
+QAZ2G6br999
+QAZ2G7br999
+QAZ2G8br999
+QAZ2G9br999
+QAZ2G10br999
+QAZ2G11br999
+endbr999
+endbr999
+function A2()br999
+SKA =gg.multiChoice({"こ1","こ2","こ3","こ4","こ5","こ6","こ7","こ8","こ9","こ0","戻る"},nil,'')br999
+if SKA == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ3G1br999
+QAZ3G2br999
+QAZ3G3br999
+QAZ3G4br999
+QAZ3G5br999
+QAZ3G6br999
+QAZ3G7br999
+QAZ3G8br999
+QAZ3G9br999
+QAZ3G10br999
+QAZ3G11br999
+endbr999
+endbr999
+function A3()br999
+SKB =gg.multiChoice({ "さ1","さ2","さ3",
+"さ4","さ5","さ6","さ7","さ8","さ9","さ0","戻る"},nil,'')br999
+if SKB == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ4G1br999
+QAZ4G2br999
+QAZ4G3br999
+QAZ4G4br999
+QAZ4G5br999
+QAZ4G6br999
+QAZ4G7br999
+QAZ4G8br999
+QAZ4G9br999
+QAZ4G10br999
+QAZ4G11br999
+endbr999
+endbr999
+function A4()br999
+SKC =gg.multiChoice({"し1","し2","し3","し4","し5","し6","し7","し8","し9","し0","戻る"},nil,'')br999
+if SKC == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ5G1br999
+QAZ5G2br999
+QAZ5G3br999
+QAZ5G4br999
+QAZ5G5br999
+QAZ5G6br999
+QAZ5G7br999
+QAZ5G8br999
+QAZ5G9br999
+QAZ5G10br999
+QAZ5G11br999
+endbr999
+endbr999
+function A5()br999
+SKD =gg.multiChoice({"す1","す2","す3","す4","す5","す6","す7","す8","す9","す0","戻る"},nil,'')br999
+if SKD == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ6G1br999
+QAZ6G2br999
+QAZ6G3br999
+QAZ6G4br999
+QAZ6G5br999
+QAZ6G6br999
+QAZ6G7br999
+QAZ6G8br999
+QAZ6G9br999
+QAZ6G10br999
+QAZ6G11br999
+endbr999
+endbr999
+function A6()br999
+SKE =gg.multiChoice({"せ1","せ2","せ3","せ4","せ5","せ6","せ7","せ8","せ9","せ0","戻る"},nil,'')br999
+if SKE == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ7G1br999
+QAZ7G2br999
+QAZ7G3br999
+QAZ7G4br999
+QAZ7G5br999
+QAZ7G6br999
+QAZ7G7br999
+QAZ7G8br999
+QAZ7G9br999
+QAZ7G10br999
+QAZ7G11br999
+endbr999
+endbr999
+function A7()br999
+SKF =gg.multiChoice({"そ1","そ2","そ3","そ4","そ5","そ6","そ7","そ8","そ9","そ0","戻る"},nil,'')br999
+if SKF == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ8G1br999
+QAZ8G2br999
+QAZ8G3br999
+QAZ8G4br999
+QAZ8G5br999
+QAZ8G6br999
+QAZ8G7br999
+QAZ8G8br999
+QAZ8G9br999
+QAZ8G10br999
+QAZ8G11br999
+endbr999
+endbr999
+function A8()br999
+SKG =gg.multiChoice({"た1","た2","た3","た4","た5","た6","た7","た8","た9","た0","戻る"},nil,'')br999
+if SKG == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ9G1br999
+QAZ9G2br999
+QAZ9G3br999
+QAZ9G4br999
+QAZ9G5br999
+QAZ9G6br999
+QAZ9G7br999
+QAZ9G8br999
+QAZ9G9br999
+QAZ9G10br999
+QAZ9G11br999
+endbr999
+endbr999
+function A9()br999
+SKH =gg.multiChoice({"ち1","ち2","ち3","ち4","ち5","ち6","ち7","ち8","ち9","ち0","戻る"},nil,'')br999
+if SKH == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ10G1br999
+QAZ10G2br999
+QAZ10G3br999
+QAZ10G4br999
+QAZ10G5br999
+QAZ10G6br999
+QAZ10G7br999
+QAZ10G8br999
+QAZ10G9br999
+QAZ10G10br999
+QAZ10G11br999
+endbr999
+endbr999
+function A10()br999
+SKI =gg.multiChoice({"つ1","つ2","つ3","つ4","つ5","つ6","つ7","つ8","つ9","つ0","戻る"},nil,'')br999
+if SKI == nil thenbr999
+gg.setVisible(false)br999
+elsebr999
+QAZ11G1br999
+QAZ11G2br999
+QAZ11G3br999
+QAZ11G4br999
+QAZ11G5br999
+QAZ11G6br999
+QAZ11G7br999
+QAZ11G8br999
+QAZ11G9br999
+QAZ11G10br999
+QAZ11G11br999
+endbr999
+endbr999
+function h1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲１)br999
+gg.searchNumber("検索値１", gg.TYPE_タイプ１, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン１", gg.TYPE_タイプ１,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト１)br999
+gg.editAll("変更値１", gg.TYPE_タイプ１)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲２)br999
+gg.searchNumber("検索値２", gg.TYPE_タイプ２, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン２", gg.TYPE_タイプ２,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト２)br999
+gg.editAll("変更値２", gg.TYPE_タイプ２)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲３)br999
+gg.searchNumber("検索値３", gg.TYPE_タイプ３, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン３", gg.TYPE_タイプ３,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト３)br999
+gg.editAll("変更値３", gg.TYPE_タイプ３)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲４)br999
+gg.searchNumber("検索値４", gg.TYPE_タイプ４, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン４", gg.TYPE_タイプ４,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト４)br999
+gg.editAll("変更値４", gg.TYPE_タイプ４)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲５)br999
+gg.searchNumber("検索値５", gg.TYPE_タイプ５, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン５", gg.TYPE_タイプ５,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト５)br999
+gg.editAll("変更値５", gg.TYPE_タイプ５)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲６)br999
+gg.searchNumber("検索値６", gg.TYPE_タイプ６, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン６", gg.TYPE_タイプ６,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト６)br999
+gg.editAll("変更値６", gg.TYPE_タイプ６)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲７)br999
+gg.searchNumber("検索値７", gg.TYPE_タイプ７, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン７", gg.TYPE_タイプ７,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト７)br999
+gg.editAll("変更値７", gg.TYPE_タイプ７)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲８)br999
+gg.searchNumber("検索値８", gg.TYPE_タイプ８, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン８", gg.TYPE_タイプ８,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト８)br999
+gg.editAll("変更値８", gg.TYPE_タイプ８)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲９)br999
+gg.searchNumber("検索値９", gg.TYPE_タイプ９, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン９", gg.TYPE_タイプ９,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト９)br999
+gg.editAll("変更値９", gg.TYPE_タイプ９)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function h10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲10)br999
+gg.searchNumber("検索値10", gg.TYPE_タイプ10, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン10", gg.TYPE_タイプ10,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト10)br999
+gg.editAll("変更値10", gg.TYPE_タイプ10)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲11)br999
+gg.searchNumber("検索値11", gg.TYPE_タイプ11, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン11", gg.TYPE_タイプ11,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト11)br999
+gg.editAll("変更値11", gg.TYPE_タイプ11)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲12)br999
+gg.searchNumber("検索値12", gg.TYPE_タイプ12, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン12", gg.TYPE_タイプ12,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト12)br999
+gg.editAll("変更値12", gg.TYPE_タイプ12)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲13)br999
+gg.searchNumber("検索値13", gg.TYPE_タイプ13, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン13", gg.TYPE_タイプ13,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト13)br999
+gg.editAll("変更値13", gg.TYPE_タイプ13)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲14)br999
+gg.searchNumber("検索値14", gg.TYPE_タイプ14, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン14", gg.TYPE_タイプ14,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト14)br999
+gg.editAll("変更値14", gg.TYPE_タイプ14)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲15)br999
+gg.searchNumber("検索値15", gg.TYPE_タイプ15, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン15", gg.TYPE_タイプ15,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト15)br999
+gg.editAll("変更値15", gg.TYPE_タイプ15)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲16)br999
+gg.searchNumber("検索値16", gg.TYPE_タイプ16, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン16", gg.TYPE_タイプ16,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト16)br999
+gg.editAll("変更値16", gg.TYPE_タイプ16)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲17)br999
+gg.searchNumber("検索値17", gg.TYPE_タイプ16, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン17", gg.TYPE_タイプ17,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト17)br999
+gg.editAll("変更値17", gg.TYPE_タイプ17)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲18)br999
+gg.searchNumber("検索値18", gg.TYPE_タイプ18, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン18", gg.TYPE_タイプ18,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト18)br999
+gg.editAll("変更値18", gg.TYPE_タイプ18)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲19)br999
+gg.searchNumber("検索値19", gg.TYPE_タイプ19, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン19", gg.TYPE_タイプ19,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト19)br999
+gg.editAll("変更値19", gg.TYPE_タイプ19)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function P10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲20)br999
+gg.searchNumber("検索値20", gg.TYPE_タイプ20, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン20", gg.TYPE_タイプ20,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト20)br999
+gg.editAll("変更値20", gg.TYPE_タイプ20)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲21)br999
+gg.searchNumber("検索値21", gg.TYPE_タイプ21, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン21", gg.TYPE_タイプ21,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト21)br999
+gg.editAll("変更値21", gg.TYPE_タイプ21)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲22)br999
+gg.searchNumber("検索値22", gg.TYPE_タイプ22, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン22", gg.TYPE_タイプ22,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト22)br999
+gg.editAll("変更値22", gg.TYPE_タイプ22)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲23)br999
+gg.searchNumber("検索値23", gg.TYPE_タイプ23, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン23", gg.TYPE_タイプ23,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト23)br999
+gg.editAll("変更値23", gg.TYPE_タイプ23)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲24)br999
+gg.searchNumber("検索値24", gg.TYPE_タイプ24, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン24", gg.TYPE_タイプ24,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト24)br999
+gg.editAll("変更値24", gg.TYPE_タイプ24)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲25)br999
+gg.searchNumber("検索値25", gg.TYPE_タイプ25, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン25", gg.TYPE_タイプ25,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト25)br999
+gg.editAll("変更値25", gg.TYPE_タイプ25)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲26)br999
+gg.searchNumber("検索値26", gg.TYPE_タイプ26, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン26", gg.TYPE_タイプ26,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト26)br999
+gg.editAll("変更値26", gg.TYPE_タイプ26)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲27)br999
+gg.searchNumber("検索値27", gg.TYPE_タイプ27, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン27", gg.TYPE_タイプ27,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト27)br999
+gg.editAll("変更値27", gg.TYPE_タイプ27)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲28)br999
+gg.searchNumber("検索値28", gg.TYPE_タイプ28, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン28", gg.TYPE_タイプ28,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト28)br999
+gg.editAll("変更値28", gg.TYPE_タイプ28)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲29)br999
+gg.searchNumber("検索値29", gg.TYPE_タイプ29, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン29", gg.TYPE_タイプ29,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト29)br999
+gg.editAll("変更値29", gg.TYPE_タイプ29)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function KA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲30)br999
+gg.searchNumber("検索値30", gg.TYPE_タイプ30, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン30", gg.TYPE_タイプ30,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト30)br999
+gg.editAll("変更値30", gg.TYPE_タイプ30)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲31)br999
+gg.searchNumber("検索値31", gg.TYPE_タイプ31, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン31", gg.TYPE_タイプ31,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト31)br999
+gg.editAll("変更値31", gg.TYPE_タイプ31)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲32)br999
+gg.searchNumber("検索値32", gg.TYPE_タイプ32, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン32", gg.TYPE_タイプ32,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト32)br999
+gg.editAll("変更値32", gg.TYPE_タイプ32)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲33)br999
+gg.searchNumber("検索値33", gg.TYPE_タイプ33, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン33", gg.TYPE_タイプ33,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト33)br999
+gg.editAll("変更値33", gg.TYPE_タイプ33)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲34)br999
+gg.searchNumber("検索値34", gg.TYPE_タイプ34, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン34", gg.TYPE_タイプ34,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト34)br999
+gg.editAll("変更値34", gg.TYPE_タイプ34)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲35)br999
+gg.searchNumber("検索値35", gg.TYPE_タイプ35, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン35", gg.TYPE_タイプ35,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト35)br999
+gg.editAll("変更値35", gg.TYPE_タイプ35)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲36)br999
+gg.searchNumber("検索値36", gg.TYPE_タイプ36, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン36", gg.TYPE_タイプ36,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト36)br999
+gg.editAll("変更値36", gg.TYPE_タイプ36)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲37)br999
+gg.searchNumber("検索値37", gg.TYPE_タイプ37, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン37", gg.TYPE_タイプ37,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト37)br999
+gg.editAll("変更値37", gg.TYPE_タイプ37)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲38)br999
+gg.searchNumber("検索値38", gg.TYPE_タイプ38, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン38", gg.TYPE_タイプ38,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト38)br999
+gg.editAll("変更値38", gg.TYPE_タイプ38)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲39)br999
+gg.searchNumber("検索値39", gg.TYPE_タイプ39, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン39", gg.TYPE_タイプ39,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト39)br999
+gg.editAll("変更値39", gg.TYPE_タイプ39)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function LA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲40)br999
+gg.searchNumber("検索値40", gg.TYPE_タイプ40, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン40", gg.TYPE_タイプ40,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト40)br999
+gg.editAll("変更値40", gg.TYPE_タイプ40)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲41)br999
+gg.searchNumber("検索値41", gg.TYPE_タイプ41, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン41", gg.TYPE_タイプ41,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト41)br999
+gg.editAll("変更値41", gg.TYPE_タイプ41)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲42)br999
+gg.searchNumber("検索値42", gg.TYPE_タイプ42, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン42", gg.TYPE_タイプ42,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト42)br999
+gg.editAll("変更値42", gg.TYPE_タイプ42)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲43)br999
+gg.searchNumber("検索値43", gg.TYPE_タイプ43, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン43", gg.TYPE_タイプ43,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト43)br999
+gg.editAll("変更値43", gg.TYPE_タイプ43)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲44)br999
+gg.searchNumber("検索値44", gg.TYPE_タイプ44, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン44", gg.TYPE_タイプ44,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト44)br999
+gg.editAll("変更値44", gg.TYPE_タイプ44)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲45)br999
+gg.searchNumber("検索値45", gg.TYPE_タイプ45, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン45", gg.TYPE_タイプ45,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト45)br999
+gg.editAll("変更値45", gg.TYPE_タイプ45)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲46)br999
+gg.searchNumber("検索値46", gg.TYPE_タイプ46, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン46", gg.TYPE_タイプ46,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト46)br999
+gg.editAll("変更値46", gg.TYPE_タイプ46)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲47)br999
+gg.searchNumber("検索値47", gg.TYPE_タイプ47, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン47", gg.TYPE_タイプ47,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト47)br999
+gg.editAll("変更値47", gg.TYPE_タイプ47)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲48)br999
+gg.searchNumber("検索値48", gg.TYPE_タイプ48, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン48", gg.TYPE_タイプ48,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト48)br999
+gg.editAll("変更値48", gg.TYPE_タイプ48)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲49)br999
+gg.searchNumber("検索値49", gg.TYPE_タイプ49, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン49", gg.TYPE_タイプ49,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト49)br999
+gg.editAll("変更値49", gg.TYPE_タイプ49)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲50)br999
+gg.searchNumber("検索値50", gg.TYPE_タイプ50, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン50", gg.TYPE_タイプ50,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト50)br999
+gg.editAll("変更値50", gg.TYPE_タイプ50)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function MA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲51)br999
+gg.searchNumber("検索値51", gg.TYPE_タイプ51, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン51", gg.TYPE_タイプ51,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト51)br999
+gg.editAll("変更値51", gg.TYPE_タイプ51)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲52)br999
+gg.searchNumber("検索値52", gg.TYPE_タイプ52, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン52", gg.TYPE_タイプ52,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト52)br999
+gg.editAll("変更値52", gg.TYPE_タイプ52)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA3()br999 
+seekBarbr999
+gg.setRanges(メモリ範囲53)br999
+gg.searchNumber("検索値53", gg.TYPE_タイプ53, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン53", gg.TYPE_タイプ53,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト53)br999
+gg.editAll("変更値53", gg.TYPE_タイプ53)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲54)br999
+gg.searchNumber("検索値54", gg.TYPE_タイプ54, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン54", gg.TYPE_タイプ54,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト54)br999
+gg.editAll("変更値54", gg.TYPE_タイプ54)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲55)br999
+gg.searchNumber("検索値55", gg.TYPE_タイプ55, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン55", gg.TYPE_タイプ55,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト55)br999
+gg.editAll("変更値55", gg.TYPE_タイプ55)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲56)br999
+gg.searchNumber("検索値56", gg.TYPE_タイプ56, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン56", gg.TYPE_タイプ56,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト56)br999
+gg.editAll("変更値56", gg.TYPE_タイプ56)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲57)br999
+gg.searchNumber("検索値57", gg.TYPE_タイプ57, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン57", gg.TYPE_タイプ57,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト57)br999
+gg.editAll("変更値57", gg.TYPE_タイプ57)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲58)br999
+gg.searchNumber("検索値58", gg.TYPE_タイプ58, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン58", gg.TYPE_タイプ58,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト58)br999
+gg.editAll("変更値58", gg.TYPE_タイプ58)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲59)br999
+gg.searchNumber("検索値59", gg.TYPE_タイプ59, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン59", gg.TYPE_タイプ59,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト59)br999
+gg.editAll("変更値59", gg.TYPE_タイプ59)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function NA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲60)br999
+gg.searchNumber("検索値60", gg.TYPE_タイプ60, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン60", gg.TYPE_タイプ60,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト60)br999
+gg.editAll("変更値60", gg.TYPE_タイプ60)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲61)br999
+gg.searchNumber("検索値61", gg.TYPE_タイプ61, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン61", gg.TYPE_タイプ61,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト61)br999
+gg.editAll("変更値61", gg.TYPE_タイプ61)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲62)br999
+gg.searchNumber("検索値62", gg.TYPE_タイプ62, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン62", gg.TYPE_タイプ62,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト62)br999
+gg.editAll("変更値62", gg.TYPE_タイプ62)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲63)br999
+gg.searchNumber("検索値63", gg.TYPE_タイプ63, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン63", gg.TYPE_タイプ63,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト63)br999
+gg.editAll("変更値63", gg.TYPE_タイプ63)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲64)br999
+gg.searchNumber("検索値64", gg.TYPE_タイプ64, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン64", gg.TYPE_タイプ64,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト64)br999
+gg.editAll("変更値64", gg.TYPE_タイプ64)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲65)br999
+gg.searchNumber("検索値65", gg.TYPE_タイプ65, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン65", gg.TYPE_タイプ65,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト65)br999
+gg.editAll("変更値65", gg.TYPE_タイプ65)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲66)br999
+gg.searchNumber("検索値66", gg.TYPE_タイプ66, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン66", gg.TYPE_タイプ66,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト66)br999
+gg.editAll("変更値66", gg.TYPE_タイプ66)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲67)br999
+gg.searchNumber("検索値67", gg.TYPE_タイプ67, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン67", gg.TYPE_タイプ67,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト67)br999
+gg.editAll("変更値67", gg.TYPE_タイプ67)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲68)br999
+gg.searchNumber("検索値68", gg.TYPE_タイプ68, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン68", gg.TYPE_タイプ68,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト68)br999
+gg.editAll("変更値68", gg.TYPE_タイプ68)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲69)br999
+gg.searchNumber("検索値69", gg.TYPE_タイプ69, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン69", gg.TYPE_タイプ69,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト69)br999
+gg.editAll("変更値69", gg.TYPE_タイプ69)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function BA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲70)br999
+gg.searchNumber("検索値70", gg.TYPE_タイプ70, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン70", gg.TYPE_タイプ70,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト70)br999
+gg.editAll("変更値70", gg.TYPE_タイプ70)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲71)br999
+gg.searchNumber("検索値71", gg.TYPE_タイプ71, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン71", gg.TYPE_タイプ71,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト71)br999
+gg.editAll("変更値71", gg.TYPE_タイプ71)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲72)br999
+gg.searchNumber("検索値72", gg.TYPE_タイプ72, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン72", gg.TYPE_タイプ72,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト72)br999
+gg.editAll("変更値72", gg.TYPE_タイプ72)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲73)br999
+gg.searchNumber("検索値73", gg.TYPE_タイプ73, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン73", gg.TYPE_タイプ73,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト73)br999
+gg.editAll("変更値73", gg.TYPE_タイプ73)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲74)br999
+gg.searchNumber("検索値74", gg.TYPE_タイプ74, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン74", gg.TYPE_タイプ74,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト74)br999
+gg.editAll("変更値74", gg.TYPE_タイプ74)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲75)br999
+gg.searchNumber("検索値75", gg.TYPE_タイプ75, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン75", gg.TYPE_タイプ75,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト75)br999
+gg.editAll("変更値75", gg.TYPE_タイプ75)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲76)br999
+gg.searchNumber("検索値76", gg.TYPE_タイプ76, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン76", gg.TYPE_タイプ76,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト76)br999
+gg.editAll("変更値76", gg.TYPE_タイプ76)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA7()br999 
+seekBarbr999
+gg.setRanges(メモリ範囲77)br999
+gg.searchNumber("検索値77", gg.TYPE_タイプ77, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン77", gg.TYPE_タイプ77,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト77)br999
+gg.editAll("変更値77", gg.TYPE_タイプ77)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲78)br999
+gg.searchNumber("検索値78", gg.TYPE_タイプ78, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン78", gg.TYPE_タイプ78,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト78)br999
+gg.editAll("変更値78", gg.TYPE_タイプ78)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲79)br999
+gg.searchNumber("検索値79", gg.TYPE_タイプ79, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン79", gg.TYPE_タイプ79,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト79)br999
+gg.editAll("変更値79", gg.TYPE_タイプ79)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function VA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲80)br999
+gg.searchNumber("検索値80", gg.TYPE_タイプ80, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン80", gg.TYPE_タイプ80,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト80)br999
+gg.editAll("変更値80", gg.TYPE_タイプ80)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲81)br999
+gg.searchNumber("検索値81", gg.TYPE_タイプ81, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン81", gg.TYPE_タイプ81,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト81)br999
+gg.editAll("変更値81", gg.TYPE_タイプ81)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲82)br999
+gg.searchNumber("検索値82", gg.TYPE_タイプ82, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン82", gg.TYPE_タイプ82,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト82)br999
+gg.editAll("変更値82", gg.TYPE_タイプ82)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲83)br999
+gg.searchNumber("検索値83", gg.TYPE_タイプ83, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン83", gg.TYPE_タイプ83,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト83)br999
+gg.editAll("変更値83", gg.TYPE_タイプ83)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲84)br999
+gg.searchNumber("検索値84", gg.TYPE_タイプ84, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン84", gg.TYPE_タイプ84,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト84)br999
+gg.editAll("変更値84", gg.TYPE_タイプ84)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲85)br999
+gg.searchNumber("検索値85", gg.TYPE_タイプ85, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン85", gg.TYPE_タイプ85,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト85)br999
+gg.editAll("変更値85", gg.TYPE_タイプ85)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲86)br999
+gg.searchNumber("検索値86", gg.TYPE_タイプ86, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン86", gg.TYPE_タイプ86,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト86)br999
+gg.editAll("変更値86", gg.TYPE_タイプ86)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲87)br999
+gg.searchNumber("検索値87", gg.TYPE_タイプ87, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン87", gg.TYPE_タイプ88,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト87)br999
+gg.editAll("変更値87", gg.TYPE_タイプ87)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲88)br999
+gg.searchNumber("検索値88", gg.TYPE_タイプ88, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン88", gg.TYPE_タイプ88,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト88)br999
+gg.editAll("変更値88", gg.TYPE_タイプ88)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲89)br999
+gg.searchNumber("検索値89", gg.TYPE_タイプ89, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン89", gg.TYPE_タイプ89,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト89)br999
+gg.editAll("変更値89", gg.TYPE_タイプ89)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function CA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲90)br999
+gg.searchNumber("検索値90", gg.TYPE_タイプ90, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン90", gg.TYPE_タイプ90,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト90)br999
+gg.editAll("変更値90", gg.TYPE_タイプ90)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA1()br999
+seekBarbr999
+gg.setRanges(メモリ範囲91)br999
+gg.searchNumber("検索値91", gg.TYPE_タイプ91, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン91", gg.TYPE_タイプ91,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト91)br999
+gg.editAll("変更値91", gg.TYPE_タイプ91)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA2()br999
+seekBarbr999
+gg.setRanges(メモリ範囲92)br999
+gg.searchNumber("検索値92", gg.TYPE_タイプ92, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン92", gg.TYPE_タイプ92,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト92)br999
+gg.editAll("変更値92", gg.TYPE_タイプ92)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA3()br999
+seekBarbr999
+gg.setRanges(メモリ範囲93)br999
+gg.searchNumber("検索値93", gg.TYPE_タイプ93, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン93", gg.TYPE_タイプ93,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト93)br999
+gg.editAll("変更値93", gg.TYPE_タイプ93)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA4()br999
+seekBarbr999
+gg.setRanges(メモリ範囲94)br999
+gg.searchNumber("検索値94", gg.TYPE_タイプ94, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン94", gg.TYPE_タイプ94,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト94)br999
+gg.editAll("変更値94", gg.TYPE_タイプ94)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA5()br999
+seekBarbr999
+gg.setRanges(メモリ範囲95)br999
+gg.searchNumber("検索値95", gg.TYPE_タイプ95, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン95", gg.TYPE_タイプ95,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト95)br999
+gg.editAll("変更値95", gg.TYPE_タイプ95)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA6()br999
+seekBarbr999
+gg.setRanges(メモリ範囲96)br999
+gg.searchNumber("検索値96", gg.TYPE_タイプ96, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン96", gg.TYPE_タイプ96,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト96)br999
+gg.editAll("変更値96", gg.TYPE_タイプ96)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA7()br999
+seekBarbr999
+gg.setRanges(メモリ範囲97)br999
+gg.searchNumber("検索値97", gg.TYPE_タイプ97, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン97", gg.TYPE_タイプ97,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト97)br999
+gg.editAll("変更値97", gg.TYPE_タイプ97)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA8()br999
+seekBarbr999
+gg.setRanges(メモリ範囲98)br999
+gg.searchNumber("検索値98", gg.TYPE_タイプ98, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン98", gg.TYPE_タイプ98,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト98)br999
+gg.editAll("変更値98", gg.TYPE_タイプ98)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA9()br999
+seekBarbr999
+gg.setRanges(メモリ範囲99)br999
+gg.searchNumber("検索値99", gg.TYPE_タイプ99, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファイン99", gg.TYPE_タイプ99,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルト99)br999
+gg.editAll("変更値99", gg.TYPE_タイプ99)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function XA10()br999
+seekBarbr999
+gg.setRanges(メモリ範囲saigo)br999
+gg.searchNumber("検索値saigo", gg.TYPE_タイプsaigo, false, gg.SIGN_EQUAL, 0, -1)br999
+gg.refineNumber("リファインsaigo", gg.TYPE_タイプsaigo,false, gg.SIGN_EQUAL, 0, -1)br999
+gg.getResults(リザルトsaigo)br999
+gg.editAll("変更値saigo", gg.TYPE_タイプsaigo)br999
+offsetAddbr999
+gg.clearResults()br999
+endbr999
+function A4455()br999
+gg.clearResults()br999
+gg.toast("終了")br999
+local QPL = 350br999
+gg.sleep(QPL)br999
+gg.skipRestoreState()br999
+gg.setVisible(true)br999
+os.exit()br999
+endbr999
+while (true)br999
+dobr999
+if gg.isVisible(true) thenbr999
+valu = 1br999
+gg.setVisible(false)br999
+endbr999
+if valu == 1 thenbr999
+Main()br999
+endbr999
+endbr999
+</a>
+</div>
+				</div>
+				</body>
+</html>
